@@ -162,6 +162,7 @@ form{
 #f5{
   display: flex;
   gap: 15px;
+  border: 2px solid red;
 }
 label{
   color: #344054;
@@ -173,8 +174,47 @@ label{
 #btn_submit:focus {
   border: 1px solid #1570EF;
 }
-#btn_submit:disabled {
+#btn_submit:focus #btn_submit:disabled {
   background-color: #B2DDFF;
+}
+
+#f5 input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+#check{
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+#check:after{
+  content: '';
+  position: absolute;
+  display: none;
+}
+#f5 input:checked ~ #check::after{
+  display: block;
+}
+#check:focus{
+  border: 1px solid #84CAFF
+}
+#f5 #check:after{
+  left: 4px;
+  top: 1px;
+  width: 2px;
+  height: 8px;
+  border: 1px solid #1570EF;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 @media (max-width: 375px) {
   footer {

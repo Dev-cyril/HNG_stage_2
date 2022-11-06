@@ -1,8 +1,10 @@
-
+import { useState } from 'react'
 import logo from '../images/logo.png'
 import I4G from '../images/I4G.png'
 
 const ContactMe = () => {
+
+    
 
     return (
         <>
@@ -28,6 +30,7 @@ const ContactMe = () => {
                     </label>
                     <label id='f5'>
                         <input type='checkbox' />
+                        <span id='check'></span>
                         <h5>You agree to providing your data to {name} who may contact you.</h5>
                     </label>
                     <button id='btn_submit'>Send message</button>
