@@ -117,7 +117,7 @@ footer>h5 {
   margin: 100px auto;
 }
 #f1, #f2{
-  width: 48%;
+  width: 47%;
 }
 #f3, #f4, #f5{
   width: 100%;
@@ -177,44 +177,9 @@ label{
 #btn_submit:focus #btn_submit:disabled {
   background-color: #B2DDFF;
 }
-
-#f5 input{
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-#check{
-  position: absolute;
-  height: 15px;
-  width: 15px;
-  background-color: #fff;
-  border: 1px solid grey;
-  border-radius: 5px;
-}
-#check:after{
-  content: '';
-  position: absolute;
-  display: none;
-}
-#f5 input:checked ~ #check::after{
-  display: block;
-}
-#check:focus{
-  border: 1px solid #84CAFF
-}
-#f5 #check:after{
-  left: 4px;
-  top: 1px;
-  width: 2px;
-  height: 8px;
-  border: 1px solid #1570EF;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+textarea, input{
+  padding: 5px 10px;
+  border: 2px solid red;
 }
 @media (max-width: 375px) {
   footer {
