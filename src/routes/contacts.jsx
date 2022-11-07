@@ -30,7 +30,7 @@ const ContactMe = () => {
                     </label>
                     <label id='f5'>
                         <input type='checkbox' />
-                        <h5>You agree to providing your data to Cyril who may contact you.</h5>
+                        <span>You agree to providing your data to Cyril who may contact you.</span>
                     </label>
                     <button id='btn_submit'>Send message</button>
                 </form>
