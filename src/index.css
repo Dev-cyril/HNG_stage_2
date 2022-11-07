@@ -161,7 +161,7 @@ form{
 }
 #f5{
   display: flex;
-  gap: 15px;
+  gap: 10px;
 
 }
 label{
@@ -216,7 +216,7 @@ textarea, input{
     flex-direction: column;
   }
   #f1, #f2 {
-    width: 100%;
+    width: 98%;
   }
   #f5{
     font-size: 16px;
